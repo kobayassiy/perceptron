@@ -10,9 +10,10 @@ LOOP_MAX = 1000
 def predict(weight_vec, data_vec, b):
     sum = b
     for i, weight in enumerate(weight_vec):
-        sum += weight * data_vec[i]
+        sum += weight * data_vec[i] 
     if sum >= 0:
         label = 1
+        
     else:
         label = -1
     return label
